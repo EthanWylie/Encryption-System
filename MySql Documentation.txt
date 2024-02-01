@@ -9,9 +9,7 @@ create table users(
     last_name varchar(255)
     );
     
-insert into users(user_id, user_email, user_password, first_name, last_name) values(
-	0, 'ethanwylie101@gmail.com', 'pass', 'Ethan', 'Wylie'
-    );
+insert into users(user_id, user_email, user_password, first_name, last_name) values ('example@email.com', 'hashed_password', 'John', 'Doe');
 
 alter table users modify user_id int auto_increment;
 
@@ -20,6 +18,8 @@ ADD CONSTRAINT unique_email UNIQUE (user_email);
 
 ALTER TABLE users
 ADD CONSTRAINT unique_user_id UNIQUE (user_id);
+
+ALTER TABLE users MODIFY user_password VARCHAR(255);
 
 select * from users;
 
