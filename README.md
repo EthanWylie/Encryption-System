@@ -25,7 +25,7 @@ This GUI application offers a seamless experience for users to register accounts
 ## Setup
 
 1. Clone the repository:
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/EthanWylie/Encryption-System.git
 cd your-repo
 
 2. Install dependencies:
